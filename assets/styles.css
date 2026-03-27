@@ -1399,17 +1399,8 @@ p {
 /* ============================================================
    SCROLL ANIMATIONS
    ============================================================ */
-/* Scroll reveal — only hidden when JS is active (js-ready class on body) */
+/* Scroll reveal — visible by default, animated on scroll */
 .reveal {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.js-ready .reveal {
-  opacity: 0;
-  transform: translateY(24px);
-}
-.js-ready .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
