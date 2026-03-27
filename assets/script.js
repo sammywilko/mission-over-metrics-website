@@ -204,6 +204,8 @@
      INIT
   ────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
+    // Mark body as JS-ready so reveal animations can engage
+    document.body.classList.add('js-ready');
     setActiveNav();
     initNavScroll();
     initMobileNav();
