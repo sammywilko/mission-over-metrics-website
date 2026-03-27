@@ -79,11 +79,21 @@
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px 0px 0px'
     });
 
     els.forEach(el => observer.observe(el));
+
+    // Immediately reveal anything already in viewport on load
+    setTimeout(() => {
+      els.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    }, 50);
   }
 
   /* ──────────────────────────────────────────────
