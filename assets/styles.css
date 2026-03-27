@@ -3,25 +3,34 @@
    ============================================================ */
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* Telegraf UltraBold — self-hosted */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('PPTelegraf-UltraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ============================================================
    CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
-  --bg:           #0D0D0D;
-  --surface:      #151515;
-  --surface-high: #1E1E1E;
-  --gold:         #C9A84C;
-  --gold-light:   #E6C364;
-  --gold-dim:     #9A7A2E;
-  --text:         #E8E4DC;
-  --text-muted:   #A09888;
-  --text-faint:   #6B6358;
-  --border:       #2A2825;
+  --bg:           #0D2920;
+  --surface:      #152F24;
+  --surface-high: #1D4337;
+  --gold:         #CEFF6C;
+  --gold-light:   #DEFF8E;
+  --gold-dim:     #9DC44A;
+  --text:         #E8F0E4;
+  --text-muted:   #8AAF96;
+  --text-faint:   #527A62;
+  --border:       #1D4337;
 
-  --font-serif: 'Newsreader', Georgia, serif;
-  --font-sans:  'Inter', system-ui, sans-serif;
+  --font-serif: 'Telegraf', 'Manrope', sans-serif;
+  --font-sans:  'Manrope', system-ui, sans-serif;
 
   --nav-height: 72px;
   --max-width:  1200px;
@@ -113,7 +122,7 @@ p {
 
 .gold-rule {
   border: none;
-  border-top: 1px solid rgba(201, 168, 76, 0.3);
+  border-top: 1px solid rgba(206, 255, 108, 0.3);
   margin: 0;
 }
 
@@ -189,14 +198,14 @@ p {
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: rgba(13, 13, 13, 0.95);
+  background: rgba(13, 41, 32, 0.95);
   border-bottom: 1px solid var(--border);
   transition: backdrop-filter var(--transition), background var(--transition);
 }
 
 .nav.scrolled {
   backdrop-filter: blur(20px);
-  background: rgba(13, 13, 13, 0.80);
+  background: rgba(13, 41, 32, 0.80);
 }
 
 .nav__inner {
@@ -296,7 +305,7 @@ p {
   top: var(--nav-height);
   left: 0;
   right: 0;
-  background: rgba(13, 13, 13, 0.97);
+  background: rgba(13, 41, 32, 0.97);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 1.5rem 2rem;
@@ -319,7 +328,7 @@ p {
    ============================================================ */
 .footer {
   border-top: 1px solid var(--gold);
-  border-top-color: rgba(201, 168, 76, 0.4);
+  border-top-color: rgba(206, 255, 108, 0.4);
   padding: 4rem 0 2.5rem;
   background: var(--bg);
 }
@@ -480,7 +489,7 @@ p {
 .hero__quote-deco {
   font-family: var(--font-serif);
   font-size: clamp(12rem, 20vw, 22rem);
-  color: rgba(201, 168, 76, 0.06);
+  color: rgba(206, 255, 108, 0.06);
   line-height: 0.85;
   user-select: none;
   flex-shrink: 0;
@@ -752,7 +761,7 @@ p {
    CTA BANNER
    ============================================================ */
 .cta-banner {
-  background: linear-gradient(135deg, #1a1508 0%, #0d0d0d 40%, #1a1508 100%);
+  background: linear-gradient(135deg, #0a2218 0%, #0D2920 40%, #0a2218 100%);
   text-align: center;
   padding: var(--section-pad) 0;
   position: relative;
@@ -763,7 +772,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(206, 255, 108, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -904,7 +913,7 @@ p {
   font-family: var(--font-serif);
   font-size: 5rem;
   font-weight: 700;
-  color: rgba(201, 168, 76, 0.15);
+  color: rgba(206, 255, 108, 0.15);
   line-height: 1;
   display: block;
   margin-bottom: -0.5rem;
@@ -1327,7 +1336,7 @@ p {
 
 .form-success {
   display: none;
-  background: rgba(201, 168, 76, 0.08);
+  background: rgba(206, 255, 108, 0.08);
   border: 1px solid var(--gold-dim);
   border-radius: 4px;
   padding: 1.5rem;
