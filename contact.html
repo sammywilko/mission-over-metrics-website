@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mission Over Metrics</title>
+  <meta name="description" content="Book a free 30-minute strategy call with Adam Birley at Mission Over Metrics. Not a sales pitch — just clarity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__wordmark">MOM</a>
+      <ul class="nav__links" role="list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="approach.html" class="nav__link">Approach</a></li>
+        <li><a href="work.html" class="nav__link">Work</a></li>
+        <li><a href="insights.html" class="nav__link">Insights</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--outline nav__cta">Book a call →</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" role="menu">
+      <a href="about.html" class="nav__link">About</a>
+      <a href="approach.html" class="nav__link">Approach</a>
+      <a href="work.html" class="nav__link">Work</a>
+      <a href="insights.html" class="nav__link">Insights</a>
+      <a href="contact.html" class="btn btn--primary">Book a call →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero" aria-label="Page header">
+    <div class="container">
+      <span class="eyebrow page-hero__eyebrow reveal">Get in Touch</span>
+      <h1 class="reveal reveal-delay-1">Let's talk.</h1>
+      <p class="page-hero__sub reveal reveal-delay-2">
+        A 30-minute strategy call. Not a sales pitch. Tell me about your business and what you're trying to achieve — I'll tell you honestly whether I can help.
+      </p>
+    </div>
+  </header>
+
+  <hr class="gold-rule" />
+
+  <!-- CONTACT GRID -->
+  <section class="section" aria-label="Contact form and information">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div>
+          <span class="eyebrow reveal">Book a Call</span>
+          <h2 class="reveal reveal-delay-1" style="font-size: 1.8rem; margin-bottom: 2rem;">Tell me about your situation.</h2>
+
+          <div id="form-success" class="form-success" aria-live="polite">
+            <strong style="display: block; font-size: 1.1rem; margin-bottom: 0.5rem;">Message received ✓</strong>
+            I'll be in touch within 24 hours to set up a call. Thanks for reaching out.
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <span class="form-error">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" placeholder="Company name" required autocomplete="organization" />
+              <span class="form-error">Please enter your company</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Work email *</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email" />
+              <span class="form-error">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <label for="website">Website</label>
+              <input type="url" id="website" name="website" placeholder="https://yourcompany.com" autocomplete="url" />
+            </div>
+
+            <div class="form-group">
+              <label for="challenge">Biggest content challenge *</label>
+              <textarea id="challenge" name="challenge" placeholder="Tell me what's not working, what you're trying to achieve, or where you feel stuck. The more honest, the better the call." required></textarea>
+              <span class="form-error">Please describe your challenge</span>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Monthly budget range *</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select a range</option>
+                <option value="playbook">One-off project (£997)</option>
+                <option value="partnership">£1,997–£3,000/month</option>
+                <option value="engine">£4,997+/month</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+              <span class="form-error">Please select a budget range</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="align-self: flex-start; font-size: 0.95rem; padding: 0.9rem 2rem; margin-top: 0.5rem;">
+              Send message →
+            </button>
+
+          </form>
+        </div>
+
+        <!-- INFO + FAQ -->
+        <div class="contact-info reveal reveal-delay-1">
+          <h3>What to expect.</h3>
+          <p>
+            Fill in the form and I'll reply within 24 hours with a Calendly link to book a 30-minute call. We'll use it to understand your situation — no deck, no pitch, no pressure.
+          </p>
+
+          <a href="mailto:hello@missionovermetrics.com" class="contact-email-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            hello@missionovermetrics.com
+          </a>
+
+          <div class="faq">
+            <span class="faq__title">Common questions</span>
+
+            <div class="faq__item">
+              <div class="faq__q">Do you work with startups?</div>
+              <p class="faq__a">It depends on the stage and the problem. The Playbook is a good entry point for early-stage companies who need direction before committing to ongoing strategy. If the budget doesn't yet match the ambition, I'll tell you that honestly — and we can talk about when the timing is right.</p>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__q">Do you do production?</div>
+              <p class="faq__a">No. Mission Over Metrics is a strategy-only practice. I work with your existing production resources — or help you find the right production partner once we have a clear brief. A great strategy brief makes production better and cheaper. That's the point.</p>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__q">How quickly can you start?</div>
+              <p class="faq__a">Typically within two to three weeks of our first call, depending on current availability. The Playbook takes three to four weeks from kickoff to delivery. The Partnership and Engine Room engagements can be structured to start faster if there's urgency. Ask on the call and we'll find the right timing.</p>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__q">What do you need from us?</div>
+              <p class="faq__a">An honest conversation about what's working and what isn't. Access to anyone who has context on the business objectives and the customer. And a genuine commitment to starting with why — not defending existing content decisions. The process only works if we're honest with each other.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__wordmark">MOM</a>
+          <p class="footer__tagline">Video strategy that starts with why.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <span class="footer__col-title">Navigate</span>
+          <ul class="footer__nav" role="list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="approach.html">Approach</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <span class="footer__col-title">Get in touch</span>
+          <a href="contact.html" class="btn btn--outline">Book a strategy call →</a>
+          <a href="mailto:hello@missionovermetrics.com" class="footer__cta-email">hello@missionovermetrics.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Mission Over Metrics. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
