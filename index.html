@@ -63,7 +63,7 @@
   <!-- ═══════════════════════════════════════
        THE PROBLEM
   ════════════════════════════════════════ -->
-  <section class="section" id="the-problem" aria-label="The problem">
+  <section class="section section--glow" id="the-problem" aria-label="The problem">
     <div class="container">
       <span class="eyebrow reveal">The Strategy Gap</span>
       <div class="stats-grid reveal reveal-delay-1">
@@ -92,7 +92,7 @@
   <!-- ═══════════════════════════════════════
        METHODOLOGY TEASER
   ════════════════════════════════════════ -->
-  <section class="section" id="approach-teaser" aria-label="The approach">
+  <section class="section section--glow" id="approach-teaser" aria-label="The approach">
     <div class="container">
       <span class="eyebrow reveal">The Approach</span>
       <h2 class="reveal reveal-delay-1" style="margin-bottom: 1rem;">Why first. Audience second. Content last.</h2>
@@ -203,12 +203,34 @@
     <div class="container">
       <div class="about-teaser__grid">
         <div class="reveal">
-          <blockquote>
+          <!-- Headshot card -->
+          <div class="headshot-wrap" style="display:inline-block; position:relative;">
+            <div class="headshot-card">
+              <!-- DROP IN ADAM'S PHOTO: replace the placeholder div below with:
+                   <img src="assets/adam-birley.jpg" alt="Adam Birley" />
+              -->
+              <div class="headshot-placeholder">
+                <div class="headshot-placeholder__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                  </svg>
+                </div>
+                <div class="headshot-placeholder__name">Adam Birley</div>
+                <p class="headshot-placeholder__label">Headshot coming soon</p>
+              </div>
+            </div>
+            <!-- Floating name tag overlaid on photo -->
+            <div class="headshot-cred">
+              <div class="headshot-cred__name">Adam Birley</div>
+              <p class="headshot-cred__title">Founder · Mission Over Metrics</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <blockquote style="margin-bottom: 2rem;">
             <p class="about-teaser__quote">"Most video fails not because of production quality. It fails because nobody asked why it needed to exist."</p>
             <p class="about-teaser__attribution">— Adam Birley, Founder</p>
           </blockquote>
-        </div>
-        <div class="reveal reveal-delay-1">
           <p class="about-teaser__body">
             Adam Birley has spent 20+ years helping some of the world's most recognised brands tell better stories. From McLaren's racing team to Coca-Cola's campaigns, LadBible's content engine to America's Cup's global broadcast strategy — the lesson is always the same: strategy without mission is just noise.
           </p>
